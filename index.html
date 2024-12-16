@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Erla Sai Thoran Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">E. Sai Thoran</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" 
+					        style="background-image:url(images/jjjj.gif); 
+                                 background-size: contain; 
+                                 background-repeat: no-repeat; 
+                                 background-position: center; 
+                                 height: 400px; 
+                                 width: 400px;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sai Thoran</span></h1>
+
+						<!-- Element to contain animated style="background-image:url(images/jjjj.gif);"> typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'......',
+						'𝙲𝚂 𝚂𝚝𝚞𝚍𝚎𝚗𝚝...  ',
+						' 𝙿𝚊𝚜𝚜𝚒𝚘𝚗𝚊𝚝𝚎 𝚘𝚗 𝙰𝙸! & 𝙲𝚢𝚋𝚎𝚛-𝚂𝚎𝚌!',
+						'𝙴𝚗𝚐𝚒𝚗𝚎𝚎𝚛...  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 80); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 80);
+						}
+
+						// Start the typing animation loop <h1 class="big">About</h1>
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Under-Graduate Student</h2>
+			            <p><a href="https://www.linkedin.com/in/sai-thoran-43721a291/" class="btn btn-primary py-3 px-4">Linked in</a> 
+							<a href="https://github.com/ESaiThoran" class="btn btn-white btn-outline-white py-3 px-4">My Works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/photosai.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Sai Thoran</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Computer Science Student</span></p>
+										<p><span class="title-s">Time Line: </span> <span>4 Years</span></p>
+										<p><span class="title-s">Address: </span> <span>Hyderabad, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s"></p>
+									<p class="title-s">Skills:</p>
+									<span>PYTHON</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>AI & ML</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>CYBER SECURITY</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>CRYPTOGRAPHY</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>DATA STRUCTURES & ALGORITHMS</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								 
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With over 4 years of comprehensive study in the program Computer Science and Engineering, Gained Ethical hacking knowledge and penetration testing and has a good knowledge of tools. 
+									Deep understanding on Cryptography and steganography. Passionate about Artificial Intelligence and I have worked on AI related projects. 
+									Learned C, C++, PYTHON, CSS and HTML... Has project experience related to front end and backend. 
+									Gained a strong foundation in data structures and algorithms, ensuring efficient and optimized solutions for complex problems. 
+									Got a good command of General Aptitude and Critical Thinking.</p>
+
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Student</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Computer Science & Engineering</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Telugu & Hindi</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>DSA, Operating sys, SEMP & DevOps</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Playing Cricket and Chess | Watching Sc-fi movies | Cooking | Learning | Trips | Music</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="6">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://github.com/ESaiThoran" class="btn btn-primary py-3 px-3">Git Repo's</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h2 style="font-size: 40px; font-weight: 400; line-height: 1.4;">One of My Advanced Project</h2>
+					<h2 style="font-size: 40px; font-weight: 400; line-height: 1.4;">.</h2>
+					<video id="dynamic-video" class="img-fluid mb-4" style="max-width: 100%; height: auto;" controls>
+						<source src="images/mfp1.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">#</h1>
+            <h2 class="mb-4">#</h2>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Certificates</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023</span>
+						<h2>Google Cloud Developer</h2>
+						<span class="position">Google</span>
+						<p class="mt-4">Application deployment environments on Google Cloud App Engine, Google Kubernetes Engine, and Compute Engine. 
+							<ul>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023</span>
+						<h2>DevOps Operate and Monitor</h2>
+						<span class="position">AWS</span>
+						<p class="mt-4">Gained Knowledge on operating applications on AWS services.
+							<ul>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+                <div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023</span>
+						<h2>AWS cloud Technical Essentials</h2>
+						<span class="position">AWS</span>
+						<p class="mt-4">Understood AWS database and storage, RDS, Amazon DynamoDB, and Amazon S3, Amazon EC2, AWS Lambda, and Amazon ECS. 
+							<ul>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023</span>
+						<h2>Machine Learning</h2>
+						<span class="position">AWS</span>
+						<p class="mt-4">. 
+							<ul>
+							</ul>
+						</p>
+					</div>
+				
+				</div>	
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022</span>
+						<h2>Ethical hacking workshop</h2>
+						<span class="position">university workshop</span>
+						<p class="mt-4">. 
+							<ul>
+							</ul>
+						</p>
+					</div>
+
+				</div>	
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022</span>
+						<h2>Ethical Hacking beginner</h2>
+						<span class="position">simplilearn</span>
+						<p class="mt-4">. 
+							<ul>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate text-center">
+    					<span class="date">2021-2025</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">SRM Institute of Science & Technology</span>
+    					<p class="mt-4">GRADE: 8.40 / 10 CGPA -OR- 3.36 / 4 GPA</P>
+						<p class="mt-4">GRADE UPTO 6TH SEMESTER</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate text-center">
+    					<span class="date">2019-2021</span>
+    					<h2>INTERMEDIATE EDUCATION</h2>
+    					<span class="position">NARAYANA JUNIOR COLLAGE</span>
+						<p class="mt-4">12<sup>th</sup> TSBIE BOARD</p>
+    					<p class="mt-4">GRADE: 93.30%</p>
+    				</div>
+				</div>
+    		</div>
+
+			    <div class="col-md-12.5">
+			    	<div class="resume-wrap ftco-animate text-center">
+			    		<span class="date">2019</span>
+				    	<h2>Secondary High School</h2>
+				    	<span class="position">NARAYANA e-techno school</span>
+				    	<p class="mt-4">10<sup>th</sup> TSBIE BOARD</p>
+					    <p class="mt-4">GRADE: 9.3 / 10 CGPA</p>
+				    </div>
+			    </div>
+		    </div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">GOTO TOP</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are my Project Works on CSE, CyberSec, AI & ML and Web-simulation</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/ESaiThoran/JARVIS-for-System" class="block-20 zoom-effect" style="background-image: url('images/jarvis.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ESaiThoran/JARVIS-for-System">JARVIS FOR SYSTEM</a></h3>
+                <p>Jarvis-AI with large language model (LLM), enabled it with NLP and responding to commands and deliver conversational or operational response for real-time task, data retrieval, and manages applications.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/ESaiThoran/Phishing-Detection-Tool" class="block-20 zoom-effect" style="background-image: url('images/phishing.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ESaiThoran/Phishing-Detection-Tool">Phishind detection extension using Python Project</a></h3>
+                <p>Real time Chrome extension that employs machine learning algorithms to identify phishing websites while browsing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/ESaiThoran/Cryptography-and-steganography" class="block-20 zoom-effect" style="background-image: url('images/cast.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ESaiThoran/Cryptography-and-steganography">Cryptography-and-steganography</a></h3>
+                <p>Digital security platform, that seamlessly integrates advanced cryptographic and steganographic techniques to provide robust data protection and concealment in media files. This website employs A hybrid cryptographic approach, utilizing AES, 3DES, and Blowfish algorithms.
+					</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ESaiThoran/Adversarial-attack-defence-mechanism" class="block-20 zoom-effect" style="background-image: url('images/adva.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ESaiThoran/Adversarial-attack-defence-mechanism">Adversarial Attack Defense Mechanism </a></h3>
+				  <p>This project leverages a defence mechanism to counter adversarial attacks on image classification models by employing deep learning strategies to prevent manipulation. </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/ESaiThoran/Restarunt-management-system-179" class="block-20 zoom-effect" style="background-image: url('images/res.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/ESaiThoran/Restarunt-management-system-179">Restarunt Management System </a></h3>
+				  <p>Developed and implemented a comprehensive website with UI/UX frontend and backend. That has facilities like creating account, find item, manage cart, saved inventory and easy navigation and payment.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="row d-flex justify-content-center">  
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+					<a href="https://github.com/ESaiThoran/Emotion-Detection-From-human-voices" class="block-20 zoom-effect" style="background-image: url('images/emo.jpg');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+	  
+					  <h3 class="heading"><a href="https://github.com/ESaiThoran/Emotion-Detection-From-human-voices">Emotion Detection by Voice  </a></h3>
+					  <p>This project effectively evaluates features such as pitch, speech rate, and spectral attributes to accurately interpret emotional states including happiness, sadness, anger, fear using LSTM AI model. </p>
+					</div>
+				  </div>
+				</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="6">0</strong>
+                <span>PROJECTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="7">0</strong>
+                <span>CERTIFICATIONS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="1">0</strong>
+                <span>CASE STUDY</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" title="">waiting</strong>
+                <span>for IEEE conference</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/aus.png)">
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>All about projects and more info on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love Exparimenting in Technology &amp; Intrested in Space Exploration. </h4>
+						<br>
+						<p><a href="https://github.com/ESaiThoran" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Hyderabad, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">9535396606</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">esaithoran01@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="" class="btn btn-primary py-3 px-5">Send e-mail</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sai-thoran-43721a291/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	          <script></script> Thank You  <i class="icon-heart color-danger" aria-hidden="true"></i></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
